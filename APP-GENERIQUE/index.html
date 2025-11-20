@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebRTC Generic Application</title>
+    <style>
+        #config {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        video {
+            width: 48%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WebRTC Application Générique</h1>
+
+    <div id="config">
+        <h3>Configuration de la Session</h3>
+        <label for="signalingTech">Signalisation :</label>
+        <select id="signalingTech">
+            <option value="socketio">Socket.io</option>
+            <option value="websocket">WebSocket Natif</option>
+        </select>
+
+        <label for="dataType">Canal de Données :</label>
+        <select id="dataType">
+            <option value="rtc">RTCDataChannel (P2P)</option>
+            <option value="none">Aucun (Média seulement)</option>
+        </select>
+
+        <label for="channelName">Nom du Canal :</label>
+        <input type="text" id="channelName" value="default_channel" required>
+
+        <button id="startApp">Démarrer & Rejoindre</button>
+    </div>
+
+    <div class="media-container">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <div id="scratchPad"></div>
+
+    <script src='/socket.io/socket.io.js'></script>
+    <script type="text/javascript" src="js/genericApp.js"></script>
+</body>
+
+</html>

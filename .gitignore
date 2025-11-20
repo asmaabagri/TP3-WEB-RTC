@@ -1,0 +1,11 @@
+# Ignorer les dépendances Node.js
+node_modules/
+
+# Ignorer les environnements virtuels Python (si vous avez des projets Python)
+venv/
+.venv/
+
+# Ignorer les fichiers temporaires et de cache
+*.log
+*.cache
+.DS_Store

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Data Example</title>
+</head>
+
+<body>
+    <textarea rows="5" cols="50" id="dataChannelSend"
+        placeholder="1: Press Connect; 2: Enter text; 3: Press Send."></textarea>
+    <textarea rows="5" cols="50" id="dataChannelReceive" disabled></textarea>
+
+    <div id="buttons">
+        <button id="startButton">Connect WebSocket</button>
+        <button id="sendButton" disabled>Send</button>
+        <button id="closeButton" disabled>Disconnect</button>
+    </div>
+
+    <script src="js/websocketData.js"></script>
+</body>
+
+</html>
