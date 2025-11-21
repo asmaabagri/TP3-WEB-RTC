@@ -181,10 +181,4 @@ curl http://localhost:8888/logout -b cookies.txt
 - **fs module**: File system operations
 - **formidable**: File upload handling
 
-## License
 
-ISC
-
-## Author
-
-TP2 P2P Web - Node.js Assignment
